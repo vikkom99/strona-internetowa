@@ -10,19 +10,21 @@
 
 <body>
     <nav>
-        <ul><a href="#">About us</a></ul>
-        <ul><a href="#">Skills</a></ul>
-        <ul><a href="#">Portfolio</a></ul>
-        <ul><a href="#">Contact</a></ul>
+        <ul>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <header>
+    <header id="about-us">
         <h1>About us</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odit quos veniam sunt, voluptas qui illum
             assumenda voluptatibus voluptate pariatur dolores natus dolor! Itaque pariatur officiis tempora deleniti
             repudiandae mollitia!</p>
     </header>
-    <article>
-        <h1>Skills</h1>
+    <article id="skills">
+        <h2>Skills</h2>
         <div class="skill">
             <h3>Nagłówek 1</h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ducimus similique laudantium, inventore
@@ -51,28 +53,30 @@
                 exercitationem possimus numquam?</p>
 
         </div>
-        <h1>Portfolio</h1>
-        <h3>Nasze Portfolio</h3>
-        <div class="portfolio-item"><img width="150px" height="150px"
-                src="http://cdn.home-designing.com/wp-content/uploads/2018/08/modern-master-bedroom-ideas.jpg"></div>
-        <div class="portfolio-item"><img width="150px" height="150px"
-                src="https://assets.architecturaldigest.in/photos/621f43c6fa7af6911e95b64a/16:9/w_1615,h_908,c_limit/7%20budget-friendly%20kids%E2%80%99%20room%20design%20ideas.jpg">
-        </div>
-        <div class="portfolio-item"><img width="150px" height="150px"
-                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/plaidfox-oceanview-0530-1641583281.jpg">
-        </div>
     </article>
-    <footer>
-        <h1>Contact</h1>
+    <section id="portfolio"></section>
+    <h1>Portfolio</h1>
+    <h3>Nasze Portfolio</h3>
+    <div class="portfolio-item"><img width="150" height="150" alt="bed1"
+            src="http://cdn.home-designing.com/wp-content/uploads/2018/08/modern-master-bedroom-ideas.jpg"></div>
+    <div class="portfolio-item"><img width="150" height="150" alt="bed2"
+            src="https://assets.architecturaldigest.in/photos/621f43c6fa7af6911e95b64a/16:9/w_1615,h_908,c_limit/7%20budget-friendly%20kids%E2%80%99%20room%20design%20ideas.jpg">
+    </div>
+    <div class="portfolio-item"><img width="150" height="150" alt="bed3"
+            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/plaidfox-oceanview-0530-1641583281.jpg">
+    </div>
+    </section>
+    <footer id="contact">
+        <h3>Contact</h3>
         <h4>Viktor Komarov</h4>
         <address>Okulickiego 57 , 32-654, Kraków</address>
         <form>
             <label for="name">Imię</label>
-            <input required type="text">
-            <label for="name">Temat</label>
-            <input required type="text">
-            <label for="name">Wiadomość</label>
-            <input required type="text">
+            <input required id="name" type="text">
+            <label for="subject">Temat</label>
+            <input required id="subject" type="text">
+            <label for="message">Wiadomość</label>
+            <input required id="message" type="text">
             <button> Wyslij</button>
         </form>
     </footer>
